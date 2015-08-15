@@ -41,8 +41,10 @@ x&#124;y | 匹配x或y。例如，<code>z&#124;food</code>能匹配<code>z</code
 \\W | 匹配任何非单词字符。等价于```[^A-Za-z0-9_]```。
 
 ## 优先级
-1. \ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转义符
-2. (), (?:), (?=), [] 　　　　　       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;圆括号和方括号
-3. *, +, ?, {n}, {n,}, {n,m} 　       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;限定符
-4. ^, $, \anymetacharacter 　　位置和顺序
-5. | 　　　　　　　　　　　　　 “或”操作
+优先级 | 字符 | 描述
+-----|-----|-----
+1 | \ | 转义符
+2 | (), (?:), (?=), [] | 圆括号和方括号
+3 | *, +, ?, {n}, {n,}, {n,m} | 限定符
+4 | ^, $, \anymetacharacter | 位置和顺序
+5 |  &#124; | “或”操作
